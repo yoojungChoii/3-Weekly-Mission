@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: rgba(240, 246, 255, 1);
+  display: flex;
+  flex-direction: column;
+  font-family: Pretendard;
+  margin: 238px auto 252px;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sign-up {  
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin : 16px auto 16px;
+}
+
+.sign-up a{
+  color: rgba(109, 106, 254, 1);
+  font-weight: 600;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 12px;
+  margin-top: 24px;
+  font-family: Pretendard;
+}
+
+#email, #password{
+  width: 400px;
+  height: 60px;
+  padding: 18px, 15px, 18px, 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(204, 213, 227, 1);
+}
+
+input:focus {outline: 1px solid rgba(109, 106, 254, 1);}
+
+button {
+  border:none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  padding: 16px 20px 16px 20px;
+  border-radius: 8px;
+  background-image: linear-gradient(90.99deg, #6D6AFE 0.12%, #6AE3FE 101.84%);
+  color:rgba(245, 245, 245, 1);
+  line-height: 21.6px;
+  text-align: center;
+  width: 400px;
+  height: 54px;
+  padding: 16px, 20px, 16px, 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.login-sns {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  width: 400px;
+  height: 66px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 8px;
+  border: 1px solid rgba(204, 213, 227, 1);
+  background-image: linear-gradient(0deg, #E7EFFB, #E7EFFB),
+                    linear-gradient(0deg, #CCD5E3, #CCD5E3);
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px
+}
+
+.passinput{
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  margin: 50px 370px 5px;
+}
