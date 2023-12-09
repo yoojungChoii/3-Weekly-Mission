@@ -170,18 +170,13 @@ h1 {
 .header-imgs {
   max-width: 100%;
   height: auto;
-  /* width: 900px;
-  height: 450px; */
 }
 
 .main-imgs {
-  /* width: 55rem;
-  height: 45rem; */
   max-width: 100%;
   width: 100%;
   height: auto;
   border-radius: 16px;
-  /* margin: 20px x60p; */
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -207,14 +202,13 @@ h1 {
 }
 
 .section-left, .section-right {
-  font-size: 16px;
+  font-size: 1.5rem;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   width: 80%;
-  height: 55rem;
-  margin: 32px;
+  height: 30rem;
   padding: 40px 32px;
-  margin-top: 200px;
+  margin-top: 80px;
   word-break: keep-all;
 }
 
