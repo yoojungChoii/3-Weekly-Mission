@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linkbrary</title>
     <link rel="stylesheet" href="css/index-style.css">
+    <meta property="og:title" content="Linkbrary">
+    <meta property="og:description" content="세상의 모든 정보를 쉽게 저장하고 관리해 보세요">
+    <meta property="og:image" content="img/library.jpg"> 
+    <meta property="og:url" content="https://subtle-daffodil-95443f.netlify.app"> 
+    <meta property="og:type" content="website">
+  
   </head>
   <body>
     <header>
@@ -17,34 +23,67 @@
         </div>
       </div>
       <div class= "header-content">
-        <h1><span>세상의 모든 정보</span>를<br>쉽게 저장하고 관리해보세요</h1>
-          <a class= "button-signup" href = "/signup.html">링크추가하기</a>
+        <div class="h1">
+          <h1><span>세상의 모든 정보</span>를<br>쉽게 저장하고<br>관리해보세요</h1>
+        </div>  
+        <a class= "button-signup" href = "/signup.html">링크추가하기</a>
         <img class="header-imgs" src= "img/img_main.png" alt="여러 폴더 이미지가 있는 목록">
       </div>
     </header>
     <main>
-      <section>
-        <div class="main-font-left">
-          <span id="save">원하는 링크를</span><br>저장하세요
+      <section class= "section-left">
+        <div class = "main-wrapper">
+          <div class="main-font">
+            <span class="save">원하는 링크를 </span>저장하세요
+          </div>
+          <div class= "explain">
+            나중에 읽고 싶은 글, 다시 보고 싶은 영상,<br>
+            사고 싶은 옷, 기억하고 싶은 모든 것을<br>
+            한 공간에 저장하세요.
+          </div>
         </div>
-        <img class= "main-imgs" src = "img/img_folderSave.png" alt="목록에서 원하는 링크를 저장할 수 있는 이미지">
+        <div class= "image-wrapper">
+          <img class= "main-imgs" src = "img/img_folderSave.png" alt="목록에서 원하는 링크를 저장할 수 있는 이미지">
+        </div>  
       </section>
-      <section>
-        <img class= "main-imgs" src = "img/img_folderManage.png" alt="폴더 이름을 변경할 수 있는 이미지">
-        <div class="main-font-right">
-          링크를 폴더로<br><span id="manage">관리</span>하세요
+      <section class= "section-right">
+        <div class= "image-wrapper">
+          <img class= "main-imgs" src = "img/img_folderManage.png" alt="폴더 이름을 변경할 수 있는 이미지">
+        </div>
+        <div>
+          <div class="main-font">
+            링크를 폴더로 <span class="manage">관리</span>하세요
+          </div>
+          <div class= "explain">
+            나만의 폴더를 무제한으로 만들고<br>
+            다양하게 활용할 수 있습니다.
+          </div>
         </div>
       </section>
-      <section>
-        <div class="main-font-left">
-          저장한 링크를<br><span id="share">공유</span>해 보세요
+      <section class= "section-left">
+        <div>
+          <div class="main-font">
+            저장한 링크를 <span class="share">공유</span>해 보세요
+          </div>
+          <div class= "explain">
+            여러 링크를 폴더에 담고 공유할 수 있습니다.<br>가족, 친구, 동료들에게 쉽고 빠르게 링크를 공유해 보세요.
+          </div>
         </div>
-        <img class= "main-imgs" src = "img/img_folderShare.png" alt="저장한 링크를 sns와 링크복사로 공유하는 이미지">
-      </section>
-      <section>
-        <img class= "main-imgs" src = "img/img_folderSearch.png" alt="링크를 키워드로 검색하는 이미지">
-        <div class="main-font-right">
-          저장한 링크를<br><span id="search">검색</span>해 보세요
+        <div class= "image-wrapper">
+          <img class= "main-imgs" src = "img/img_folderShare.png" alt="저장한 링크를 sns와 링크복사로 공유하는 이미지">
+        </div>  
+        </section>
+      <section class= "section-right">
+        <div class= "image-wrapper">
+          <img class= "main-imgs" src = "img/img_folderSearch.png" alt="링크를 키워드로 검색하는 이미지">
+        </div>
+        <div>
+          <div class="main-font">
+            저장한 링크를 <span class="search">검색</span>해 보세요
+          </div>
+          <div class= "explain">
+            중요한 정보들을 검색으로 쉽게 찾아보세요.
+          </div>
         </div>
       </section>
     </main>
