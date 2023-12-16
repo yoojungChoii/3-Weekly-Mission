@@ -61,8 +61,8 @@ body {
   line-height: 1.4rem;
   text-align: center;
   margin: 1.3rem 32px;
-  Width: 8rem;
-  Height: 3.4rem;
+  width: 8rem;
+  height: 3.4rem;
   text-decoration: none;
 }
 
@@ -192,7 +192,7 @@ h1 {
 }
 
 .image-wrapper {
-  grid-area: i;
+  grid-area: image;
   width: 100%;
 }
 
@@ -200,8 +200,8 @@ h1 {
 .section-left  {
   font-size: 1.5rem;
   display: grid;
-  grid-template: "m i"
-                 "e i";
+  grid-template: "mainfont image"
+                 "explain image";
   width: 100%;
   height: auto;
   padding: 40px 32px;
@@ -212,8 +212,8 @@ h1 {
 .section-right {
   font-size: 1.5rem;
   display: grid;
-  grid-template: "i m"
-                 "i e";
+  grid-template: "image mainfont"
+                 "image explain";
   width: 100%;
   height: auto;
   padding: 40px 32px;
@@ -222,9 +222,9 @@ h1 {
 }
 
 .explain {
+  grid-area: explain;
   color: rgba(107, 107, 107, 1);
   padding: 30px;
-  grid-area: e;
   text-align: left;
   margin: 32px;
 }
@@ -233,9 +233,9 @@ h1 {
   .section-left, .section-right {
     display: grid;
     grid-template-areas:
-    "m"
-    "i"
-    "e";
+    "mainfont"
+    "image"
+    "explain";
     /* grid-gap: 16px; */
     grid-template-columns: 1fr;
     place-items: center;
@@ -246,7 +246,7 @@ h1 {
 }
 
 .main-font {
-  grid-area: m;
+  grid-area: mainfont;
   display: block;
   width: 100%;
   font-size: 3rem;
