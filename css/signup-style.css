@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: rgba(240, 246, 255, 1);
+  display: flex;
+  flex-direction: column;
+  font-family: Pretendard;
+  margin: 7rem auto 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  body {
+    margin: 32px;
+    margin-top: 64px;
+  }
+
+}
+
+.sign-in {  
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  margin : 1rem auto;
+}
+
+.sign-in a{
+  color: rgba(109, 106, 254, 1);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-weight: 400;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  font-family: Pretendard;
+}
+
+.email, .password, .password-confirm{
+  width: 25rem;
+  height: 3.8rem;
+  padding: 1.1rem 0.9rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(204, 213, 227, 1);
+}
+
+input:focus {outline: 1px solid rgba(109, 106, 254, 1);}
+
+button {
+  border:none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(90.99deg, #6D6AFE 0.12%, #6AE3FE 101.84%);
+  color:rgba(245, 245, 245, 1);
+  text-align: center;
+  width: 25rem;
+  height: 3rem;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+  margin-top: 3.3rem;
+}
+
+.login-sns {
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 25rem;
+  height: 4.1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(204, 213, 227, 1);
+  background-image: linear-gradient(0deg, #E7EFFB, #E7EFFB),
+                    linear-gradient(0deg, #CCD5E3, #CCD5E3);
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .email, .password, .password-confirm, button, .login-sns {
+    width: 22rem; /* 또는 다른 상대적인 값 사용 */
+    max-width: 400px;
+  }
+}
+
+.passinput{
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  margin: 3.125rem 23.125rem 0.313rem;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .eye {
+    position: absolute;
+    margin: 3.3rem 20rem 0.313rem;
+  }
+}
