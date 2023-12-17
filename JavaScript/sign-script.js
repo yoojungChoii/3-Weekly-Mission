@@ -14,34 +14,44 @@ let link = '/folder';
 function checkEmail(emailType) {
   if (emailInput.value === '') {
     errorMail.textContent = '이메일을 입력해주세요.';
+    emailInput.classList.add('error'); // 에러 클래스 추가
   } else if (!pattern.test(emailType)) {
-    errorMail.textContent = '올바른 이메일 주소가 아닙니다.'
+    errorMail.textContent = '올바른 이메일 주소가 아닙니다.';
+    emailInput.classList.add('error'); // 에러 클래스 추가
   } else if (emailInput.value !== '') {
     errorMail.textContent = '이메일을 확인해주세요.';
+    emailInput.classList.add('error'); // 에러 클래스 추가
   } else if (emailInput.value === 'test@codeit.com' && passInput.value === 'codeit101') {
     location.href = link;
   } else {
     errorMail.textContent = '';
+    emailInput.classList.remove('error'); // 에러 클래스 제거
   }
 }
 
 function checkPass() {
   if (passInput.value === '') {
     errorPass.textContent = '비밀번호를 입력해주세요.';
+    passInput.classList.add('error'); // 에러 클래스 추가
   } else if (passInput.value !== '') {
-    errorPass.textContent = '비밀번호를 확인해주세요.'
+    errorPass.textContent = '비밀번호를 확인해주세요.';
+    passInput.classList.add('error'); // 에러 클래스 추가
   } else {
     errorPass.textContent = '';
+    passInput.classList.remove('error'); // 에러 클래스 제거
   }
 }
 
 function checkPassConfirm() {
   if (passConfirmInput.value === '') {
     errorPassConfirm.textContent = '비밀번호를 다시 입력해주세요.';
+    passConfirmInput.classList.add('error'); // 에러 클래스 추가
   } else if (passConfirmInput.value !== passInput.value) {
     errorPassConfirm.textContent = '비밀번호가 일치하지 않습니다.';
+    passConfirmInput.classList.add('error'); // 에러 클래스 추가
   } else {
     errorPassConfirm.textContent = '';
+    passConfirmInput.classList.remove('error'); // 에러 클래스 제거
   }
 }
 

@@ -58,6 +58,10 @@ body {
   ;
 }
 
+.email.error, .password.error, .password-confirm.error{
+  outline: 1px solid rgba(255, 91, 86, 1);
+}
+
 input:focus {outline: 1px solid rgba(109, 106, 254, 1);}
 
 button {
