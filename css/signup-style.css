@@ -52,6 +52,11 @@ body {
   border: 1px solid rgba(204, 213, 227, 1);
 }
 
+.error-mail, .error-pass, .error-passconfirm {
+  font-size: 14px;
+  color : rgba(255, 91, 86, 1);
+}
+
 input:focus {outline: 1px solid rgba(109, 106, 254, 1);}
 
 button {
@@ -99,13 +104,13 @@ button {
   position: relative;
 }
 
-.eye {
+.eyeImageConfirm, .eyeImagePass {
   position: absolute;
   margin: 3.125rem 23.125rem 0.313rem;
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .eye {
+  .eyeImageConfirm, .eyeImagePass {
     position: absolute;
     margin: 3.3rem 20rem 0.313rem;
   }
