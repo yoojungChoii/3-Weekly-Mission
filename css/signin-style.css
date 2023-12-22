@@ -61,7 +61,6 @@ body {
 .email.error, .password.error, .password-confirm.error{
   outline: 1px solid rgba(255, 91, 86, 1);
 }
-
 input:focus {outline: 1px solid rgba(109, 106, 254, 1);}
 
 button {
@@ -99,7 +98,7 @@ button {
 
 @media (min-width: 375px) and (max-width: 767px) {
   .email, .password, button, .login-sns {
-    width: 352px; /* 또는 다른 상대적인 값 사용 */
+    width: 352px;
     max-width: 400px;
   }
 }
