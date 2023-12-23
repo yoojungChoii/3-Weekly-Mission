@@ -143,3 +143,18 @@ fetch("https://bootcamp-api.codeit.kr/docs/api/check-email", {
     }
   })
 
+function saveAccessToken(accessToken) {
+  localStorage.setItem('accessToken', accessToken);
+}
+
+function getAccessToken() {
+  return localStorage.getItem('accessToken');
+}
+
+function isThereAccessToken() {
+  const accessToken = getAccessToken();
+  if (accessToken) {
+    window.location.href = '/folder';
+  }
+}
+isThereAccessToken();
