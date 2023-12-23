@@ -104,3 +104,42 @@ passConfirmInput.addEventListener('focusout', checkPassConfirm);
 eyeImagePass.addEventListener('click', togglePasswordVisibility);
 eyeImageConfirm.addEventListener('click', togglePasswordVisibilityConfirm);
 
+const TEST_SIGN_IN = {
+  "email" : "test@codeit.com",
+  "password": "sprint101",
+}
+
+fetch("https://bootcamp-api.codeit.kr/docs/api/sign-in", {
+  method : 'POST', 
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(TEST_SIGN_IN)
+})
+.then(data => {
+  console.log(data);
+
+  if (data.success) {
+    window.location.href = '/folder';
+  }
+});
+
+const TEST_CHECK_EMAIL = {
+  "email" : "test@codeit.com"
+}
+
+fetch("https://bootcamp-api.codeit.kr/docs/api/check-email", {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(TEST_CHECK_EMAIL)
+  })
+  .then(data=> {
+    console.log(data);
+
+    if (data.success) {
+      window.location.href = '/folder';
+    }
+  })
+
