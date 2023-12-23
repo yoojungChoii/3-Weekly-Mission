@@ -61,8 +61,8 @@ body {
   line-height: 1.4rem;
   text-align: center;
   margin: 1.3rem 32px;
-  Width: 8rem;
-  Height: 3.4rem;
+  width: 8rem;
+  height: 3.4rem;
   text-decoration: none;
 }
 
@@ -174,7 +174,7 @@ h1 {
 
 .main-imgs {
   max-width: 100%;
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 16px;
 }
@@ -192,49 +192,62 @@ h1 {
 }
 
 .image-wrapper {
-  grid-area: i;
+  grid-area: image;
   width: 100%;
 }
 
-.explain {
-  grid-area: e;
-  text-align: left;
-}
 
-.section-left, .section-right {
+.section-left  {
   font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  height: 30rem;
+  display: grid;
+  grid-template: "mainfont image"
+                 "explain image";
+  width: 100%;
+  height: auto;
   padding: 40px 32px;
   margin-top: 80px;
   word-break: keep-all;
+}
+
+.section-right {
+  font-size: 1.5rem;
+  display: grid;
+  grid-template: "image mainfont"
+                 "image explain";
+  width: 100%;
+  height: auto;
+  padding: 40px 32px;
+  margin-top: 80px;
+  word-break: keep-all;
+}
+
+
+.explain {
+  grid-area: explain;
+  color: rgba(107, 107, 107, 1);
+  padding: 30px;
+  text-align: left;
+  margin: 32px;
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
   .section-left, .section-right {
     display: grid;
     grid-template-areas:
-    "m"
-    "i"
-    "e";
-    grid-gap: 16px;
+    "mainfont"
+    "image"
+    "explain";
+    /* grid-gap: 16px; */
+    grid-template-columns: 1fr;
     place-items: center;
     text-align: center;
-    grid-template-columns: 1fr;
     margin-top: 20px;
+    margin-bottom: 30px;
   }
-  
-
 }
-
-.main-wrapper {
-  display: inline-block;
-}
-
 
 .main-font {
+  grid-area: mainfont;
   display: block;
   width: 100%;
   font-size: 3rem;
@@ -250,14 +263,16 @@ h1 {
   .explain {
     font-size: 15px;
     grid-area: e;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-font {
+    text-align: center;
   }
 }
 
-.explain {
-  color: rgba(107, 107, 107, 1);
-  padding: 0;
-  margin: 32px;
-}
 
 .save {
   -webkit-background-clip: text;
@@ -292,7 +307,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-areas: 
-    "com cen sns";
+  "com cen sns";
   height: 10rem;
   padding: 2rem 6.5rem 4rem;
   grid-auto-flow: row;
