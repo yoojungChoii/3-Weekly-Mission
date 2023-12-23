@@ -221,6 +221,7 @@ h1 {
   word-break: keep-all;
 }
 
+
 .explain {
   grid-area: explain;
   color: rgba(107, 107, 107, 1);
