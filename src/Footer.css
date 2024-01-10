@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: rgba(17, 19, 34, 1);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas: "com cen sns";
+  height: 160px;
+  padding: 32px 104px 64px;
+  grid-auto-flow: row;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  footer {
+    display: grid;
+    grid-template-areas:
+      "cen sns"
+      "com .";
+    grid-column-gap: 50px;
+  }
+
+  .footer-company {
+    margin-top: 20px;
+  }
+}
+
+.footer-company {
+  grid-area: com;
+  color: rgba(103, 103, 103, 1);
+  font-family: Abel;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.footer-center {
+  grid-area: cen;
+  display: flex;
+  column-gap: 144px;
+}
+
+.footer-center a {
+  color: rgba(207, 207, 207, 1);
+  text-decoration: none;
+}
+
+.sns {
+  grid-area: sns;
+  display: flex;
+  column-gap: 19px;
+  height: 32px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .sns {
+    column-gap: 10px;
+  }
+}
