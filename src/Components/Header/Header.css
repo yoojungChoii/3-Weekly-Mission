@@ -19,3 +19,14 @@ header {
   padding: 180px 32px;
   gap: 8px;
 }
+
+.avatar-image {
+  width: 60px;
+  height: 60px;
+}
+
+.folder-name {
+  font-size: 40px;
+  font-weight: 900px;
+  margin-top: 30px;
+}
