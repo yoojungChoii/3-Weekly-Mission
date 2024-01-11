@@ -1,12 +1,12 @@
 import "./Footer.css";
-import youtubeIcon from "./img/youtube.png";
-import instagramIcon from "./img/instagram.png";
-import twitterIcon from "./img/twitter.png";
-import facebookIcon from "./img/facebook.png";
+import youtubeIcon from "../img/youtube.png";
+import instagramIcon from "../img/instagram.png";
+import twitterIcon from "../img/twitter.png";
+import facebookIcon from "../img/facebook.png";
 
 function Footer() {
   return (
-    <>
+    <div className="footer">
       <div className="footer-company">ⓒcodeit - 2023</div>
       <div className="footer-center">
         <a href="/privacy">privacy Policy</a>
@@ -26,7 +26,7 @@ function Footer() {
           <img src={instagramIcon} alt="인스타그램 로고" />
         </a>
       </div>
-    </>
+    </div>
   );
 }
 
