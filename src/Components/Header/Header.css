@@ -7,9 +7,10 @@ header {
   flex-direction: column;
   text-align: center;
   background-color: rgba(240, 246, 255, 1);
-  height: auto;
+  height: 400px;
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
 }
 
 .header-content {
@@ -28,5 +29,6 @@ header {
 .folder-name {
   font-size: 40px;
   font-weight: 900px;
-  margin-top: 30px;
+  margin: 30px auto;
+  padding: 30px auto;
 }

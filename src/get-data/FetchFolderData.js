@@ -20,12 +20,6 @@ function FetchFolderData() {
     getFolder();
   }, []);
 
-  if (folderData === null) {
-    //  userData가 null이면 로딩 중을 표시
-    return <div>Loading...</div>;
-  }
-
-  // 로딩이 완료되면 실제 데이터를 반환
   return folderData;
 }
 

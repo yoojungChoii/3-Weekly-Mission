@@ -2,7 +2,6 @@ import avatarImage from '../../img/Avatar.png';
 import Navbar from './Navbar';
 import './Header.css';
 import FetchFolderData from '../../get-data/FetchFolderData';
-import SearchBar from '../SearchBar';
 
 function Header() {
   const folderData = FetchFolderData();
@@ -24,7 +23,6 @@ function Header() {
         <div>@{ownerName}</div>
         <div className="folder-name">{folderName}</div>
       </div>
-      <SearchBar />
     </header>
   );
 }
