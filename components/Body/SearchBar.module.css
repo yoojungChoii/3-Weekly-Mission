@@ -1,0 +1,36 @@
+.search-bar {
+  max-width: 1060px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.search {
+  width: 80%;
+  border-style: none;
+  color: #666666;
+  background-color: inherit;
+  background-image: url("/Search.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  padding-left: 2.6rem;
+}
+
+.search:focus {
+  outline: none;
+}
+
+@media (max-width: 1123px) {
+  .search-bar {
+    max-width: 70.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .search-bar {
+    max-width: 32.5rem;
+  }
+}
