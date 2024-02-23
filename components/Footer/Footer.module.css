@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-areas: "com cen sns";
-  height: 160px;
+  height: 60px;
   padding: 32px 104px 64px;
   grid-auto-flow: row;
   margin: 0 auto;

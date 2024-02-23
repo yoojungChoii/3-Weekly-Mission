@@ -6,7 +6,6 @@ export interface Data {
   description: string;
   createdAt: string;
 }
-
 interface FolderData {
   folder: {
     owner: {
@@ -25,7 +24,8 @@ function FetchFolderData(): FolderData | null {
     async function getFolder() {
       try {
         const response = await fetch(
-          "https://bootcamp-api.codeit.kr/api/users/8595/folders"
+          "https://bootcamp-api.codeit.kr/api/sample/folder"
+          // "https://bootcamp-api.codeit.kr/api/users/8595/folders"
         );
         const result = await response.json();
         console.log(result);
