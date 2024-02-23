@@ -3,7 +3,8 @@
   flex-direction: column;
   text-align: center;
   background-color: rgba(240, 246, 255, 1);
-  height: 400px;
+  height: 300px;
+  align-self: stretch;
 }
 
 .header-content {
@@ -12,7 +13,6 @@
   align-items: center;
   padding: 180px auto;
   gap: 8px;
-  margin-top: 150px;
 }
 
 .avatar-image {

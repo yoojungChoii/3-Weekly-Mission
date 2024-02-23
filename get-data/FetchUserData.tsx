@@ -11,7 +11,7 @@ function FetchUserData(): UserData | null {
     async function getUser() {
       try {
         const response = await fetch(
-          "https://bootcamp-api.codeit.kr/api/sample/user"
+          "https://bootcamp-api.codeit.kr/docs/api/users/8595"
         );
         const result = await response.json();
         console.log(result);
