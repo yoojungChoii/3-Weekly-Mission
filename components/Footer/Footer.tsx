@@ -1,8 +1,8 @@
 import styles from "./Footer.module.css";
-import youtubeIcon from "../public/youtube.png";
-import instagramIcon from "../public/instagram.png";
-import twitterIcon from "../public/twitter.png";
-import facebookIcon from "../public/facebook.png";
+import youtubeIcon from "../../public/youtube.png";
+import instagramIcon from "../../public/instagram.png";
+import twitterIcon from "../../public/twitter.png";
+import facebookIcon from "../../public/facebook.png";
 import Image from "next/image";
 
 function Footer() {

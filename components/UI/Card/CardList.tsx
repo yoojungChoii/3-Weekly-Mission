@@ -1,4 +1,4 @@
-import styles from "./CardContent.module.css";
+import styles from "./CardList.module.css";
 import FetchFolderData from "../../../get-data/FetchFolderData";
 
 interface Data {
