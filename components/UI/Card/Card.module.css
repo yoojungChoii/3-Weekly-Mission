@@ -39,7 +39,7 @@
 
 .card-description {
   font-weight: 400;
-  height: 3.2rem;
+  height: 3rem;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
