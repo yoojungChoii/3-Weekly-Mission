@@ -6,6 +6,7 @@
   height: 160px;
   padding: 32px 104px 64px;
   grid-auto-flow: row;
+  margin: 0 auto;
 
   @media (min-width: 375px) and (max-width: 767px) {
     display: grid;
@@ -13,10 +14,6 @@
       "cen sns"
       "com .";
     grid-column-gap: 50px;
-  }
-
-  .footer-company {
-    margin-top: 20px;
   }
 }
 
@@ -26,13 +23,18 @@
   font-family: Abel;
   font-size: 16px;
   font-weight: 300;
-  text-align: left;
+  text-align: center;
+
+  @media (min-width: 375px) and (max-width: 767px) {
+    margin-top: 20px;
+  }
 }
 
 .footer-center {
   grid-area: cen;
   display: flex;
   column-gap: 144px;
+  margin: 0 auto;
 }
 
 .footer-center a {
@@ -45,6 +47,7 @@
   display: flex;
   column-gap: 19px;
   height: 32px;
+  margin: 0 auto;
 }
 
 @media (min-width: 375px) and (max-width: 767px) {

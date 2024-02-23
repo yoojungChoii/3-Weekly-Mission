@@ -8,7 +8,6 @@
   height: 80px;
   margin: 0;
   height: 150px;
-  padding: 0 32px;
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -34,4 +33,8 @@
   .logo {
     margin-left: 32px;
   }
+}
+
+.profile {
+  margin-right: 32px;
 }

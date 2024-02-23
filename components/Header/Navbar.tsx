@@ -13,7 +13,7 @@ function Navbar() {
           height={24}
         />
       </div>
-      <div>
+      <div className={styles["profile"]}>
         <Profile />
       </div>
     </div>
