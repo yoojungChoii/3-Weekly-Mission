@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import styles from "./Header.module.css";
-import FetchFolderData from "../../get-data/FetchFolderData";
+import FetchFolderData from "../../get-data/FetchSharedData";
 import Image from "next/image";
 
 function Header() {

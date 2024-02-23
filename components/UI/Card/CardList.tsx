@@ -1,10 +1,9 @@
-import FetchFolderData from "../../../get-data/FetchFolderData";
 import Card from "./Card";
-import { Data } from "../../../get-data/FetchFolderData";
+import FetchSharedData, { Data } from "../../../get-data/FetchSharedData";
 
 function CardList() {
   try {
-    const folderData = FetchFolderData();
+    const folderData = FetchSharedData();
     if (folderData === null) {
       return <div>Loading...</div>; // 또는 다른 로딩 상태를 나타내는 JSX
     }

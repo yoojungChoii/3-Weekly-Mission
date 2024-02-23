@@ -1,10 +1,15 @@
 import Profile from "./Profile";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 function Navbar() {
   return (
-    <div className={styles["nav-bar"]}>
+    <div
+      className={`{styles["nav-bar"]} ${
+        styles["fixed-navbar"] ? styles["fixed-navbar"] : ""
+      }`}
+    >
       <div className={styles["logo"]}>
         <Image
           src={"/Linkbrary.png"}

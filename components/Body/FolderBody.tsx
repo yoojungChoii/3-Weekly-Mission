@@ -1,9 +1,9 @@
-import styles from "./Body.module.css";
+import styles from "./FolderBody.module.css";
 import SearchBar from "./SearchBar";
 import CardList from "../UI/Card/CardList";
 import FetchFolderData from "@/get-data/FetchFolderData";
 
-function Body() {
+function FolderBody() {
   const folderdata = FetchFolderData();
   return (
     <div className={styles.body}>
@@ -17,4 +17,4 @@ function Body() {
   );
 }
 
-export default Body;
+export default FolderBody;

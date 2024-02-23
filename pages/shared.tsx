@@ -1,11 +1,11 @@
 import Header from "@/components/Header/Header";
-import Body from "@/components/Body/Body";
+import SharedBody from "@/components/Body/SharedBody";
 
 function home() {
   return (
     <div className="App">
       <Header />
-      <Body />
+      <SharedBody />
     </div>
   );
 }

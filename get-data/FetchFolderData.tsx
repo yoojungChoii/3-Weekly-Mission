@@ -1,21 +1,5 @@
+import { FolderData } from "./FetchSharedData";
 import { useEffect, useState } from "react";
-
-export interface Data {
-  id: string;
-  imageSource: string;
-  description: string;
-  createdAt: string;
-}
-interface FolderData {
-  folder: {
-    owner: {
-      profileImageSource: string;
-      name: string;
-    };
-    name: string;
-    links: Data[];
-  };
-}
 
 function FetchFolderData(): FolderData | null {
   const [folderData, setfolderData] = useState(null);
