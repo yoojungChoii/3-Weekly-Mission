@@ -1,7 +1,7 @@
 import Header from "@/components/Header/Header";
 import SharedBody from "@/components/Body/SharedBody";
 
-function home() {
+function sharedPage() {
   return (
     <div className="App">
       <Header />
@@ -10,4 +10,4 @@ function home() {
   );
 }
 
-export default home;
+export default sharedPage;

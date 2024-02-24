@@ -12,7 +12,6 @@ function FetchUserData(): UserData | null {
       try {
         const response = await fetch(
           "https://bootcamp-api.codeit.kr/api/sample/user"
-          //           "https://bootcamp-api.codeit.kr/docs/api/users/8595"
         );
         const result = await response.json();
         console.log(result);
@@ -20,6 +19,7 @@ function FetchUserData(): UserData | null {
         setUserData(result);
       } catch (error) {
         console.error("에러 발생!!!!!", error);
+        throw new Error("데이터를 가져오는 중에 오류 발생!");
       }
     }
     getUser();

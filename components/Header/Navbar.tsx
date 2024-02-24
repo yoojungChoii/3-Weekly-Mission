@@ -1,13 +1,12 @@
 import Profile from "./Profile";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 function Navbar() {
   return (
     <div
-      className={`{styles["nav-bar"]} ${
-        styles["fixed-navbar"] ? styles["fixed-navbar"] : ""
+      className={`{styles.nav_bar} ${
+        styles.fixed_navbar ? styles.fixed_navbar : ""
       }`}
     >
       <div className={styles["logo"]}>
@@ -18,7 +17,7 @@ function Navbar() {
           height={24}
         />
       </div>
-      <div className={styles["profile"]}>
+      <div className={styles.profile}>
         <Profile />
       </div>
     </div>

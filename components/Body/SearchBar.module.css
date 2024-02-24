@@ -1,4 +1,4 @@
-.search-bar {
+.search_bar {
   max-width: 1060px;
   margin: 40px;
   padding: 20px;
@@ -7,7 +7,6 @@
 }
 
 .search {
-  /* width: 80%; */
   border-style: none;
   color: #666666;
   background-color: inherit;
@@ -30,13 +29,13 @@
 }
 
 @media (max-width: 1123px) {
-  .search-bar {
+  .search_bar {
     max-width: 70.4rem;
   }
 }
 
 @media (max-width: 767px) {
-  .search-bar {
+  .search_bar {
     max-width: 32.5rem;
   }
 }

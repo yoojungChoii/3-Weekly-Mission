@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 
-export interface Data {
+export interface LinksType {
   id: string;
   imageSource: string;
   description: string;
   createdAt: string;
 }
+
 export interface FolderData {
   folder: {
     owner: {
@@ -13,7 +14,7 @@ export interface FolderData {
       name: string;
     };
     name: string;
-    links: Data[];
+    links: LinksType[];
   };
 }
 
@@ -32,6 +33,7 @@ function FetchSharedData(): FolderData | null {
         setSharedData(result);
       } catch (error) {
         console.error("에러 발생!!!!!", error);
+        throw new Error("데이터를 가져오는 중에 오류 발생!");
       }
     }
     getSharedData();

@@ -8,8 +8,8 @@ import Image from "next/image";
 function Footer() {
   return (
     <div className={styles.footer}>
-      <div className={styles["footer-company"]}>ⓒcodeit - 2023</div>
-      <div className={styles["footer-center"]}>
+      <div className={styles.footer_company}>ⓒcodeit - 2023</div>
+      <div className={styles.footer_center}>
         <a href="/privacy">privacy Policy</a>
         <a href="/faq">FAQ</a>
       </div>

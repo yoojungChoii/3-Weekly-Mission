@@ -5,7 +5,7 @@
   gap: 6px;
 }
 
-.button-login {
+.button_login {
   cursor: pointer;
   display: inline-block;
   padding: 16px 21px;
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  .button-login {
+  .button_login {
     margin-right: 32px;
   }
 }

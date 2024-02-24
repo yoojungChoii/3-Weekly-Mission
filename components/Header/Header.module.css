@@ -6,20 +6,21 @@
   height: 360px;
 }
 
-.header-content {
+.header_content {
   width: 100%;
   height: 220px;
   align-items: center;
   padding: 180px auto;
   margin: 40px auto;
+  margin-top: 100px;
 }
 
-.avatar-image {
+.avatar_image {
   width: 60px;
   height: 60px;
 }
 
-.folder-name {
+.folder_name {
   font-size: 40px;
   font-weight: 600;
   margin: 30px auto;
